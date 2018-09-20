@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">News demo 01</string>
+    <string name="toolbar_title">News</string>
+    <string name="menu_search">Search</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_video">video</string>
+    <string name="nav_discover">discover</string>
+    <string name="nav_profile">profile</string>
+</resources>

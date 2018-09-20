@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/appBarColorBack"
+        android:theme="@style/AppTheme">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:title="@string/toolbar_title">
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorAccent"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycview_category_id"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycview_banner_id"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="155dp">
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="255dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_news_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+</RelativeLayout>
